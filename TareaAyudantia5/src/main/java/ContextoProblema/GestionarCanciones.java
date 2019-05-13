@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class GestionarCanciones {
 
-    public ArrayList<Cancion> canciones;
+    public static ArrayList<Cancion> canciones;
 
     public GestionarCanciones(){
         canciones = new ArrayList<Cancion>();
