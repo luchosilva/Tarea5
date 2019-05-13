@@ -2,7 +2,6 @@ import Interfaz.Interfaz;
 import org.junit.Test;
 import static org.junit.Assert.*;
 import org.junit.Before;
-import org.junit.jupiter.api.Assertions;
 
 import java.io.IOException;
 
@@ -86,7 +85,7 @@ public class InterfazTest {
     public void agregarCanciontest() {
         GestionarCanciones g = new GestionarCanciones();
         g.agregarCancion(new Cancion());
-        Assertions.assertTrue(g.canciones.get(0)!=null);
+        assertTrue(g.canciones.get(0)!=null);
     }
 
 }
