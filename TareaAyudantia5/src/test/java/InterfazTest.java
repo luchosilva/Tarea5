@@ -80,5 +80,12 @@ public class InterfazTest {
         boolean esperado=false;
         assertEquals(esperado,i.leerArchivo(ruta));
     }
+    
+    @Test
+    public void agregarCanciontest() {
+        GestionarCanciones g = new GestionarCanciones();
+        g.agregarCancion(new Cancion());
+        Assertions.assertTrue(g.getListaCanciones().get(0)!=null);
+    }
 
 }
